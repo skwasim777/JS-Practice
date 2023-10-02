@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo01"></p>
+    <p id="demo01"></p>
+    <script>
+        function myFunction(p1,p2){
+            return p1*p2;
+        }
+        let value=myFunction(10,10);
+        document.getElementById("demo").innerHTML = value;
+    </script>
+    <script>
+         let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+        const index = text.matchAll(/Cats/gi);
+        document.getElementById("demo01").innerHTML=Array.from(index);
+    </script>
+    <script>
+        let str =  "Hello world, welcome to the universe.";
+        document.getElementById("demo02").innerHTML = str.includes("to");
+    </script>
+</body>
+</html>

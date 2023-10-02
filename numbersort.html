@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+   
+
+    <script>
+        const a = [23, 34, 5, 4, 5, 5, 3, 1, 2, 3, 3, 9];
+        const key  = a.keys();
+            let txt = "";
+        for(let x of key){
+                txt += x +"<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+        
+    </script>
+</body>
+
+</html>

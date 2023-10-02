@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        const arr = ["my", "family"];
+        const arr1 = ["Ashraf", "Rashida"];
+        const arr2 = ["Wasim", "Sofiyan"];
+        const arr3 = arr.concat(arr1, arr2);
+        document.getElementById("demo").innerHTML = arr3;
+    </script>
+    <script>
+        const a = ["Apple", "Mango", "Banana", "StrowBerry"];
+        document.getElementById("demo").innerHTML = a;
+        const b = a.slice(1);
+        document.getElementById("demo2").innerHTML = b;
+    </script>
+    <script>
+        const c = ["wasim","shaikh","from","bhatwadgaon"];
+        document.getElementById("demo").innerHTML = c;
+        c.sort();
+        document.getElementById("demo4").innerHTML=c;
+  </script>
+</body>
+
+</html>

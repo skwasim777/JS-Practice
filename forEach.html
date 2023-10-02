@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const fruites = new Map([
+            ["apples", 100],
+            ["bananas", 40],
+            ["oranges", 50]
+        ]);
+        let txt = "";
+        fruites.forEach(function (value, key) {
+            txt += key + '=' + value + "<br>";
+        })
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+
+</html>

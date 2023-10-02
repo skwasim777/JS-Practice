@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const arr = new Set();
+        let a = "wasim";
+        let b = "shaikh";
+        let c = "asharf";
+        arr.add(a);
+        arr.add(b);
+        arr.add(c);
+        let txt = "";
+        arr.forEach(function(value){
+            txt +=value+"<br>";
+        })
+        document.getElementById("demo").innerHTML = txt.values();
+    </script>
+</body>
+</html>
